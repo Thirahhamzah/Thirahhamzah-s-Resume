@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <title>MY GALLERY</title>
+<link rel="stylesheet" type= "text/css" href="index.css" >
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: Wheat;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            font-family: Monaco, monospace;
+            color: maroon;
+            text-align: center;
+            font-size: 36px;
+            padding: 20px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            position: relative;
+            border: 2px solid #8B4513;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .description {
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            right: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .box:hover .description {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+       
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 80%;
+            overflow: hidden;
+        }
+
+        .lightbox img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Ensures the image scales to fit within the lightbox */
+            display: block;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            font-size: 30px;
+            color: white;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transform: translateY(-50%);
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        
+        .prev:hover, .next:hover, .close:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>WELCOME TO MY GALLERY ✧˖°ʚ🍓ɞ♡</h1>
+
+    <div class="container">
+        <div class="box" onclick="openLightbox(0)">
+            <img src="image1.jpg" alt="Picture 1">
+            <p class="description">Melaka Trip</p>
+        </div>
+        <div class="box" onclick="openLightbox(1)">
+            <img src="image2.jpg" alt="Picture 2">
+            <p class="description">My Archie</p>
+        </div>
+        <div class="box" onclick="openLightbox(2)">
+            <img src="image3.jpg" alt="Picture 3">
+            <p class="description">Internship Friends</p>
+        </div>
+        <div class="box" onclick="openLightbox(3)">
+            <img src="image4.jpg" alt="Picture 4">
+            <p class="description">My Uni's Backbone</p>
+        </div>
+        <div class="box" onclick="openLightbox(4)">
+            <img src="image5.jpg" alt="Picture 5">
+            <p class="description">Friends</p>
+        </div>
+        <div class="box" onclick="openLightbox(5)">
+            <img src="image6.jpg" alt="Picture 6">
+            <p class="description">My Ride or Die</p>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Lightbox Image">
+            <span class="prev" onclick="changeImage(-1)">❮</span>
+            <span class="next" onclick="changeImage(1)">❯</span>
+        </div>
+    </div>
+
+    <script>
+        const images = [
+            'image11.jpg',
+            'image22.jpg',
+            'image33.jpg',
+            'image44.jpg',
+            'image55.jpg',
+	    'image88.jpg',
+            
+        ];
+
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            currentIndex = index;
+            document.getElementById('lightboxImage').src = images[currentIndex];
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+}
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            document.getElementById('lightboxImage').src = images[currentIndex];
+        }
+    </script>
+
+<div class="section"> 
+ 
+<div class="footer"> 
+  <p><center><p>© 2024 Thirahhamzah. All rights reserved.</p></center> 
+</div>
+
+</body>
+</html>
