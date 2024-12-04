@@ -1,0 +1,358 @@
+<html>
+<head>
+    <title>MY RESUME</title>
+<link rel="stylesheet" type= "text/css" href="index.css" >
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: Linen;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: saddlebrown;
+            padding: 20px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            border-right: 5px solid #8B4513;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 12px 0;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-family: Monaco, monospace;
+            font-size: 22px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            font-family: 'Georgia', serif;
+        }
+
+        .content h1 {
+            font-family: Monaco, monospace;
+            font-size: 36px;
+            text-align: center;
+            color: maroon;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #black;
+            text-align: center;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .content b {
+            color: maroon;
+        }
+
+        hr {
+            border: 3px solid maroon;
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .education-table, .food-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .education-table th, .food-table th, .education-table td, .food-table td {
+            border: 2px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .education-table th, .food-table th {
+            background-color: #c9b29c;
+        }
+
+        .education-table td, .food-table td {
+            background-color: PeachPuff;
+        }
+
+        .food-table td {
+            background-color: #fef2cc;
+        }
+
+        .education-table th, .food-table th {
+            font-size: 18px;
+        }
+
+        .food-table td {
+            font-size: 16px;
+        }
+
+        .education-table td, .food-table td {
+            font-size: 16px;
+        }
+
+        .food-table th, .food-table td {
+            border-radius: 8px;
+         }
+
+	 {
+            font-family: 'Arial', sans-serif;
+            background-color: Linen;
+            text-align: center;
+        }
+        #clock {
+            font-size: 20px;
+            color: maroon;
+            font-family: 'Georgia', serif;
+            margin-top: 20px;
+        }
+ .poster-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .poster-container img {
+        width: 250px; /* Adjust the width as needed */
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .poster-container img:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+.bookmark-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .bookmark-button {
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .bookmark-button:hover {
+            background-color: #8B0000;
+        }
+
+	
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <marquee><h2>Social Media</h2></marquee>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagram.png" alt="Instagram" style="width:32px;height:32px;vertical-align:middle;">
+            <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="facebook.png" alt="Facebook" style="width:32px;height:32px;vertical-align:middle;">
+            <span>Facebook</span>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+            <img src="Tiktok.jpg" alt="TikTok" style="width:32px;height:32px;vertical-align:middle;">
+            <span>TikTok</span>
+        </a>
+        <a href="experience.html" target="_self">Experience</a>
+        <a href="Gallery.html" target="_blank">Gallery</a>
+
+        <h3>Skills</h3>
+        <ol type="i">
+            <li>Microsoft Word <b>(Excellent)</b></li>
+            <li>Microsoft Excel <b>(Excellent)</b></li>
+            <li>Canva <b>(Excellent)</b></li>
+            <li>Google Workspace <b>(Excellent)</b></li>
+        </ol>
+
+        <hr>
+        <h3>Personal Skills</h3>
+        <ul>
+            <li>Hardworking</li>
+            <li>Team Player</li>
+            <li>High Willingness to Learn</li>
+        </ul>
+    </div>
+
+ 	
+
+    <div class="content">
+
+<div style="text-align: right; margin-right: 20px;">
+    <div id="clock" style="font-size: 16px; color: maroon;"></div>
+</div>
+
+<script>
+    function updateClock() {
+        var today = new Date();
+
+        var dayOfWeek = today.toLocaleString('en-us', { weekday: 'long' });
+        var day = today.getDate();
+        var month = today.getMonth() + 1; // Month is 0-based
+        var year = today.getFullYear();
+
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+
+        minutes = (minutes < 10) ? '0' + minutes : minutes;
+        seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+        var timeString = hours + ':' + minutes + ':' + seconds;
+        var dateString = dayOfWeek + ', ' + day + '/' + month + '/' + year;
+
+        document.getElementById('clock').innerHTML = dateString + ' | ' + timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
+        <h1>⋆˚My resume 𝜗𝜚˚⋆ </h1>
+       
+<center>
+<div class="bookmark-container">
+        <a href="#education" class="bookmark-button">Education</a>
+        <a href="#posters" class="bookmark-button">Posters</a>
+        
+    </div> 
+</center>
+
+
+       
+        <center><img src="thirah.jpg" alt="THIRAH" width="250" height="250"></center>
+
+        <center>
+            <p>Welcome <font size="5" color="maroon">Peeps!!( ੭ ･ᴗ･ )੭</font></p>
+            <p><b>Name</b>: Nur Athirah Binti Hamzah</p>
+            <p><b>Age</b>: 20 Years Old</p>
+            <p><b>Date of Birth</b>: 4 <sup>December</sup> 2024</p>
+            <p><b>Race</b>: Malay</p>
+            <p><b>Phone Number</b>: 019-5202631</p>
+            <p><b>Email Address</b>: <font color="blue"><u>athirahhamzah14@gmail.com</u></font></p>
+        </center>
+
+        <hr>
+
+    <h2 id="education">Education</h2>
+<caption>My Education Background</caption>
+
+<table class="education-table" border="1" cellspacing="0" cellpadding="5">
+    <tr>
+        <th>School Name</th>
+        <th>Year</th>
+        <th>Result</th>
+    </tr>
+    <tr>
+        <td>
+            <div style="display: flex; align-items: center;">
+                <img src="sktj.jpg" alt="Sekolah Kebangsaan Temerloh Jaya" style="width:42px; height:42px; margin-right:10px;">
+                <span><b>Sekolah Kebangsaan Temerloh Jaya</b></span>
+            </div>
+        </td>
+        <td>2011 - 2016</td>
+        <td>UPSR: 4A 2B</td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+            <div style="display: flex; align-items: center;">
+                <img src="smktj.jpg" alt="Sekolah Menengah Kebangsaan Temerloh Jaya" style="width:42px; height:42px; margin-right:10px;">
+                <span><b>Sekolah Menengah Kebangsaan Temerloh Jaya</b></span>
+            </div>
+        </td>
+        <td rowspan="2">2017 - 2022</td>
+        <td>PT3: 4A 3B</td>
+    </tr>
+    <tr>
+        <td>SPM: 3A 5B 1D</td>
+    </tr>
+    <tr>
+        <td>
+            <div style="display: flex; align-items: center;">
+                <img src="uitm.jpg" alt="Universiti Teknologi Mara" style="width:42px; height:42px; margin-right:10px;">
+                <span><b>Universiti Teknologi Mara Cawangan Johor Kampus Segamat</b></span>
+            </div>
+        </td>
+        <td>2022 - Present</td>
+        <td>Current CGPA: 3.25</td>
+    </tr>
+</table>
+
+<hr>
+        <h2 id="posters">Posters</h2>
+        <caption>Design this posters for our Outreach Program. <font color="blue"><u>Tap the poster to learn more</u></caption>
+
+
+        <div class="poster-container">
+    <a href="https://www.canva.com/design/DAGWFsW8fGo/SX50DheRgFIh7KSwOjMwcA/edit" target="_blank">
+        <img src="poster1.jpg" alt="Poster 1">
+    </a>
+    <a href="https://www.canva.com/design/DAGWuguzPhs/o8BBh3SLBvyIp0o6VzmMEg/edit" target="_blank">
+        <img src="poster2.jpg" alt="Poster 2">
+    </a>
+    <a href="https://www.canva.com/design/DAGYHVHGCGU/15VY4HPqKT024ECDb7_mKQ/edit" target="_blank">
+        <img src="poster3.jpg" alt="Poster 3">
+    </a>
+</div>
+
+
+    </div>
+
+    
+<div class="section"> 
+ 
+<div class="footer"> 
+  <p><center><p>© 2024 Thirahhamzah. All rights reserved.</p></center> 
+</div> 
+
+</body>
+</html> 
